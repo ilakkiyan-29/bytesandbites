@@ -1,0 +1,50 @@
+html{
+    background-color: #f4f4f48f;}
+body {
+        display: flex;
+        justify-content: center;   
+        align-items: center;       
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-image: url('Images.jpg'); 
+        background-size: cover;   
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+.login-container {
+        background-color: rgba(255, 255, 255, 0.327); 
+        width: 33.33%;
+        display: flex;
+        justify-content: center;  
+        align-items: center; 
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.552); /* Added shadow */
+    }
+    
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green or any color you like */
+    color: white;
+    border: none;
+    border-radius: 25px; /* makes it pill-shaped */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* darker on hover */
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* 👈 makes the fields round */
+    font-size: 14px;
+}

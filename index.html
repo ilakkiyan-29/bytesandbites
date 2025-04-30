@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Reviews - Find & Rate the Best Food</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  
+  <header>
+    <div class="logo">
+      <img src="Canteen/logo.png" alt="Food Reviews Logo">
+      <h1>Food Reviews</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#">Top Rated</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="login.html">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Discover & Rate Amazing Food</h2>
+      <p>Find the best dishes at your favorite restaurants and share your experiences</p>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search for restaurants or dishes...">
+        <button id="search-button"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </section>
+  
+  <div id="search-results" class="search-results"></div>
+
+  
+  <section class="featured-stores">
+    <h2>Featured Restaurants</h2>
+    <div class="store-grid">
+      
+      <a href="Catina de Naples.html" class="store-card">
+        <div class="store-image">
+          <img src="ish photography/Catina de Naples.png" alt="Catina de Naples">
+          <div class="store-overlay">
+            <span>View Menu</span>
+          </div>
+        </div>
+        <div class="store-info">
+          <h3>Catina de Naples</h3>
+          <div class="store-rating">
+            <div class="stars">★★★★<span class="empty-star">☆</span></div>
+            <span class="rating-text">(205 reviews)</span>
+          </div>
+          <p>Savory pastas, flavorful noodles, crispy fries, Perfect for comfort food lovers craving hearty classics with a modern twist.</p>
+        </div>
+      </a>
+
+      <a href="Aaharam indian deli.html" class="store-card">
+        <div class="store-image">
+          <img src="ish photography/Aharam indian delicacy.jpg" alt="Aaharam">
+          <div class="store-overlay">
+            <span>View Menu</span>
+          </div>
+        </div>
+        <div class="store-info">
+          <h3>Aaharam indain deli</h3>
+          <div class="store-rating">
+            <div class="stars">★★★★★</div>
+            <span class="rating-text">(187 reviews)</span>
+          </div>
+          <p>Zesty chatpati idlis and flaky, golden parottas served in a vibrant, casual setting.</p>
+        </div>
+      </a>
+
+      <a href="The pacific Cafe.html" class="store-card">
+        <div class="store-image">
+          <img src="ish photography/The Pacific Cafe.jpg" alt="The pacific Cafe">
+          <div class="store-overlay">
+            <span>View Menu</span>
+          </div>
+        </div>
+        <div class="store-info">
+          <h3>The pacific Cafe</h3>
+          <div class="store-rating">
+            <div class="stars">★★★★<span class="empty-star">☆</span></div>
+            <span class="rating-text">(142 reviews)</span>
+          </div>
+          <p>Relaxing atmosphere with specialty coffees and freshly baked pastries</p>
+        </div>
+      </a>
+      
+    </div>
+  </section>
+
+  
+  <section class="top-rated">
+    <h2>Top Rated Dishes</h2>
+    <div class="dish-carousel">
+      
+      <div class="dish-card">
+        <img src="Canteen/Catina de Naples/Egg Pasta.jpeg" alt="Egg pasta">
+        <h3>Egg pasta</h3>
+        <p>Catina de Naples</p>
+        <div class="dish-rating">★★★★★</div>
+      </div>
+      
+      <div class="dish-card">
+        <img src="Canteen/Catina de Naples/French Fries.jpeg" alt="French Fries">
+        <h3>French Fries</h3>
+        <p>Catina de Naples</p>
+        <div class="dish-rating">★★★★★</div>
+      </div>
+      
+      <div class="dish-card">
+        <img src="Canteen/Aharam indian deli/Chapati.jpeg" alt="Chappati">
+        <h3>Chappati</h3>
+        <p>Aaharam indian deli</p>
+        <div class="dish-rating">★★★★★</div>
+      </div>
+      
+      <div class="dish-card">
+        <img src="Canteen/Aharam indian deli/Idly.jpeg" alt="Idly">
+        <h3>Idly</h3>
+        <p>Aaharam indian deli</p>
+        <div class="dish-rating">★★★★★</div>
+      </div>
+      
+      <div class="dish-card">
+        <img src="Canteen/Aharam indian deli/Sambar Rice.jpg" alt="Sambar Rice">
+        <h3>Sambar Rice</h3>
+        <p>Aaharam indian deli</p>
+        <div class="dish-rating">★★★★★</div>
+      </div>
+      
+      <div class="dish-card">
+        <img src="Canteen/The Pacific Cafe/Egg Puff.jpg" alt="Egg Puff">
+        <h3>Egg Puff</h3>
+        <p>The Pacific Cafe</p>
+        <div class="dish-rating">★★★★★</div>
+      </div>
+      
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="Canteen/logo.png" alt="Food Reviews Logo">
+        <p>Food Reviews</p>
+        <small>Discover the best food around</small>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Top Rated</a></li>
+          <li><a href="#">New Reviews</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Subscribe for the latest food reviews</p>
+        <form>
+          <input type="email" placeholder="Your email address">
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Food Reviews. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="search.js"></script>
+
+</body>
+</html>
+
+<script>
+document.querySelectorAll('.logo').forEach(item => {
+  item.addEventListener('click', function() {
+    window.location.href = 'index.html';
+
+  });
+});
+</script>
