@@ -6,9 +6,8 @@ if (!localStorage.getItem('initialized')) {
 }
 
 const users = {
-    "balaji.240014@cce.ritchennai.edu.in": "codecrusaders",
-    "john.doe@example.com": "password123",
-    "jane.doe@example.com": "securepass"
+    "balaji.240014@cce.ritchennai.edu.in": "codecrusaders"
+
 };
 
 // Function to handle login
