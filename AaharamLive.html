@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaharam Live - Bytes and bites</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="Canteen/logo.jpg" alt="Bytes and bites Logo">
+      <h1>Bytes and bites</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Top Rated</a></li>
+        <li><a href="#">New Reviews</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="restaurant-header" style="background-image: url('ish photography/AaharamLive.jpg');">
+    <div class="restaurant-header-content">
+      <h1>Aaharam Live</h1>
+      <div class="restaurant-meta">
+        <div class="restaurant-rating">
+          <div class="stars">★★★★★</div>
+          <span>(150 reviews)</span>
+        </div>
+        <div class="restaurant-address">
+          <i class="fas fa-map-marker-alt"></i> Canteen
+        </div>
+        <div class="restaurant-hours">
+          <i class="far fa-clock"></i> Open 9:00 AM - 03:00 PM
+        </div>
+      </div>
+      <p>Experience live cooking with authentic flavors at Aaharam Live.</p>
+    </div>
+  </section>
+
+  <section class="menu-container">
+    <div class="menu-categories">
+      <button class="category-button active">All</button>
+    </div>
+    <div class="menu-items">
+      
+      <div class="menu-item" data-item-id="egg-fried-rice">
+        <div class="menu-item-image">
+          <img src="Canteen/AaharamLive/EggFriedRice.jpg" alt="Egg Fried Rice">
+        </div>
+        <div class="menu-item-info">
+          <h3>Egg Fried Rice</h3>
+          <div class="menu-item-rating">★★★★★</div>
+          <div class="menu-item-price">₹60</div>
+        </div>
+      </div>
+      
+      <div class="menu-item" data-item-id="veg-fried-rice">
+        <div class="menu-item-image">
+          <img src="Canteen/AaharamLive/VegFriedRice.jpg" alt="Veg Fried Rice">
+        </div>
+        <div class="menu-item-info">
+          <h3>Veg Fried Rice</h3>
+          <div class="menu-item-rating">★★★★☆</div>
+          <div class="menu-item-price">₹40</div>
+        </div>
+      </div>
+      
+      <div class="menu-item" data-item-id="poori">
+        <div class="menu-item-image">
+          <img src="Canteen/AaharamLive/Poori.jpg" alt="Poori">
+        </div>
+        <div class="menu-item-info">
+          <h3>Poori</h3>
+          <div class="menu-item-rating">★★★★☆</div>
+          <div class="menu-item-price">₹40</div>
+        </div>
+      </div>
+      
+      <div class="menu-item" data-item-id="chilly-parotta">
+        <div class="menu-item-image">
+          <img src="Canteen/AaharamLive/ChillyParotta.jpg" alt="Chilly Parotta">
+        </div>
+        <div class="menu-item-info">
+          <h3>Chilly Parotta</h3>
+          <div class="menu-item-rating">★★★★★</div>
+          <div class="menu-item-price">₹50</div>
+        </div>
+      </div>
+      
+      <div class="menu-item" data-item-id="bread-omelete">
+        <div class="menu-item-image">
+          <img src="Canteen/AaharamLive/BreadOmelete.jpg" alt="Bread Omelete">
+        </div>
+        <div class="menu-item-info">
+          <h3>Bread Omelete</h3>
+          <div class="menu-item-rating">★★★★☆</div>
+          <div class="menu-item-price">₹35</div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="/api/placeholder/50/50" alt="Bytes and bites Logo">
+        <p>Bytes and bites</p>
+        <small>Discover the best food around</small>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Top Rated</a></li>
+          <li><a href="#">New Reviews</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Subscribe for the latest Bytes and bites</p>
+        <form>
+          <input type="email" placeholder="Your email address">
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Bytes and bites. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Menu filtering functionality
+    document.querySelectorAll('.category-button').forEach(button => {
+      button.addEventListener('click', function() {
+        document.querySelectorAll('.category-button').forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // Open modal when a menu item is clicked
+    document.querySelectorAll('.menu-item').forEach(item => {
+      item.addEventListener('click', function() {
+        const modal = document.getElementById('food-modal');
+        modal.style.display = 'block';
+
+        const itemName = this.querySelector('h3').innerText;
+        const itemPrice = this.querySelector('.menu-item-price').innerText;
+        const itemRating = this.querySelector('.menu-item-rating').innerHTML;
+        const itemImage = this.querySelector('img').src;
+
+        document.querySelector('.food-detail-info h2').innerText = itemName;
+        document.querySelector('.food-price').innerText = itemPrice;
+        document.querySelector('.food-detail-rating .stars').innerHTML = itemRating;
+        document.querySelector('.food-detail-image').src = itemImage;
+
+        const descriptions = {
+          'Egg Fried Rice': 'A flavorful dish of fried rice with scrambled eggs and spices.',
+          'Veg Fried Rice': 'A healthy and delicious fried rice with fresh vegetables.',
+          'Poori': 'Soft and fluffy deep-fried bread served with curry.',
+          'Chilly Parotta': 'Spicy and tangy parotta tossed with chilies and onions.',
+          'Bread Omelete': 'A classic combination of bread and omelet, perfect for breakfast.'
+        };
+
+        document.querySelector('.food-description').innerText = descriptions[itemName] || 'A delicious menu item from Aaharam Live.';
+      });
+    });
+
+    // Close modal when the close button is clicked
+    document.getElementById('close-modal').addEventListener('click', function() {
+      document.getElementById('food-modal').style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>

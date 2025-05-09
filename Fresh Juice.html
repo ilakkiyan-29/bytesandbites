@@ -28,7 +28,7 @@
   
   <section class="restaurant-header" style="background-image: url('ish photography/Aharam indian delicacy.jpg');">
     <div class="restaurant-header-content">
-      <h1>Aaharam indian deli</h1>
+      <h1>Fresh Juice</h1>
       <div class="restaurant-meta">
         <div class="restaurant-rating">
           <div class="stars">★★★★★</div>
@@ -50,66 +50,60 @@
     <div class="menu-categories">
       <button class="category-button active">All</button>
     </div>
-
     <div class="menu-items">
       
-      
-      <div class="menu-item" data-item-id="chappati">
+      <div class="menu-item" data-item-id="apple-milkshake">
         <div class="menu-item-image">
-          <img src="Canteen/Aharam indian deli/Chapati.jpeg" alt="Chappati">
+          <img src="Canteen/Fresh Juice/AppleMilkshake.jpg" alt="Apple Milkshake">
         </div>
         <div class="menu-item-info">
-          <h3>Chappati</h3>
+          <h3>Apple Milkshake</h3>
           <div class="menu-item-rating">★★★★★</div>
           <div class="menu-item-price">₹50</div>
         </div>
       </div>
       
-      
-      <div class="menu-item" data-item-id="Idly">
+      <div class="menu-item" data-item-id="pineapple-juice">
         <div class="menu-item-image">
-          <img src="Canteen/Aharam indian deli/Idly.jpeg" alt="idly">
+          <img src="Canteen/Fresh Juice/PineappleJuice.jpg" alt="Pineapple Juice">
         </div>
         <div class="menu-item-info">
-          <h3>Idly</h3>
-          <div class="menu-item-rating">★★★★★</div>
-          <div class="menu-item-price">₹30</div>
-        </div>
-      </div>
-      
-      
-      <div class="menu-item" data-item-id="parotta">
-        <div class="menu-item-image">
-          <img src="Canteen/Aharam indian deli/Parotta.jpeg" alt="Parotta">
-        </div>
-        <div class="menu-item-info">
-          <h3>Parotta</h3>
+          <h3>Pineapple Juice</h3>
           <div class="menu-item-rating">★★★★☆</div>
           <div class="menu-item-price">₹40</div>
         </div>
       </div>
       
-      
-      <div class="menu-item" data-item-id="Sambar rice">
+      <div class="menu-item" data-item-id="papaya">
         <div class="menu-item-image">
-          <img src="Canteen/Aharam indian deli/Sambar Rice.jpg" alt="Sambar Rice">
+          <img src="Canteen/Fresh Juice/Papaya.jpg" alt="Papaya">
         </div>
         <div class="menu-item-info">
-          <h3>Sambar Rice</h3>
-          <div class="menu-item-rating">★★★★★</div>
-          <div class="menu-item-price">₹35</div>
+          <h3>Papaya</h3>
+          <div class="menu-item-rating">★★★★☆</div>
+          <div class="menu-item-price">₹40</div>
         </div>
       </div>
       
-      
-      <div class="menu-item" data-item-id="">
+      <div class="menu-item" data-item-id="orange">
         <div class="menu-item-image">
-          <img src="Canteen/Aharam indian deli/Veg Biryani.jpeg" alt="Veg biryani">
+          <img src="Canteen/Fresh Juice/Orange.jpg" alt="Orange">
         </div>
         <div class="menu-item-info">
-          <h3>Veg biryani</h3>
+          <h3>Orange</h3>
+          <div class="menu-item-rating">★★★★★</div>
+          <div class="menu-item-price">₹40</div>
+        </div>
+      </div>
+      
+      <div class="menu-item" data-item-id="watermelon">
+        <div class="menu-item-image">
+          <img src="Canteen/Fresh Juice/Watermelon.jpg" alt="Watermelon">
+        </div>
+        <div class="menu-item-info">
+          <h3>Watermelon</h3>
           <div class="menu-item-rating">★★★★☆</div>
-          <div class="menu-item-price">₹50</div>
+          <div class="menu-item-price">₹35</div>
         </div>
       </div>
       
@@ -286,9 +280,14 @@
           'Parotta': 'parotta delights with its perfectly layered,crispy-yet-soft breads and rich,flavorful curries',
           'Sambar rice': 'sambar rice delivers a hearty, tangy burst of south indian comfort in every spoonfull',
           'Veg biryani': 'Veg brinji is a fragrant rice dish cooked with spices and vegetables, offering a delightful taste of South Indian cuisine.',
+          'Apple Milkshake': 'A creamy and refreshing milkshake made with fresh apples, perfect for a healthy treat.',
+          'Pineapple Juice': 'Freshly squeezed pineapple juice with a tangy and sweet flavor, a tropical delight.',
+          'Papaya': 'Juicy and ripe papaya slices, packed with nutrients and a naturally sweet taste.',
+          'Orange': 'Freshly peeled oranges, bursting with citrusy goodness and vitamin C.',
+          'Watermelon': 'Cool and refreshing watermelon slices, perfect for a hot day.'
         };
         
-        document.querySelector('.food-description').innerText = descriptions[itemName] || 'A delicious menu item from Aaharam indian deli.';
+        document.querySelector('.food-description').innerText = descriptions[itemName] || 'A delicious menu item from Fresh Juice.';
       });
     });
     
@@ -351,3 +350,4 @@ document.querySelectorAll('.logo').forEach(item => {
 
 </body>
 </html>
+

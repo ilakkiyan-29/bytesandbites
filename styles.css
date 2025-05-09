@@ -220,15 +220,26 @@
   }
   
   .store-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px; /* Adjust spacing between cards */
+    padding: 10px;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    scroll-snap-type: x mandatory; /* Enable snapping */
+    scrollbar-width: none; /* For Firefox */
+  }
+  
+  .store-grid::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
   }
   
   .store-card {
+    flex: 0 0 auto; /* Prevent cards from shrinking */
+    width: 300px; /* Adjust card width as needed */
     background-color: white;
     border-radius: 12px;
     overflow: hidden;
+    scroll-snap-align: start; /* Snap cards to the start of the container */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;

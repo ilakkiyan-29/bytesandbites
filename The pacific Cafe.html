@@ -86,7 +86,7 @@
         </div>
       </div>
       
-      <div class="menu-item" data-item-id="Egg puff">
+      <div class="menu-item" data-item-id="Maa Juice">
         <div class="menu-item-image">
           <img src="Canteen/The Pacific Cafe/Maa Juice.jpeg" alt="Egg puff">
         </div>
@@ -151,14 +151,6 @@
               <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">★</label>
             </div>
             <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" placeholder="Enter your name">
-            </div>
-            <div class="form-group">
-              <label for="description">Description (Optional)</label>
-              <input type="text" id="description" placeholder="Describe your experience in a few words">
-            </div>
-            <div class="form-group">
               <label for="comment">Comment (Optional)</label>
               <textarea id="comment" rows="3" placeholder="Share your thoughts about this item"></textarea>
             </div>
@@ -167,38 +159,9 @@
         </div>
         <div class="comments-section">
           <h3>
-            Reviews
+            Reviews</h3>
             <span class="toggle-comments" id="toggle-comments">View All Reviews</span>
-          </h3>
-          <div class="top-comment">
-            <div class="comment-header">
-              <span class="comment-author">Emma Johnson</span>
-              <span class="comment-rating">★★★★★</span>
-            </div>
-            <p class="comment-text">"The atmosphere here is so relaxing and the coffee is simply perfect. My go-to spot for work and meetings!"</p>
-          </div>
-          <div class="all-comments" id="all-comments">
-            <div class="comment">
-              <div class="comment-header">
-                <span class="comment-author">Noah Williams</span>
-                <span class="comment-rating">★★★★☆</span>
-              </div>
-              <p class="comment-text">"Great selection of teas and the pastries are always fresh. Wish they had more seating during peak hours."</p>
-            </div>
-            <div class="comment">
-              <div class="comment-header">
-                <span class="comment-author">Olivia Martinez</span>
-                <span class="comment-rating">★★★★★</span>
-              </div>
-              <p class="comment-text">"Their cappuccino is the best in town! Perfect foam-to-coffee ratio and the baristas are so skilled."</p>
-            </div>
-            <div class="comment">
-              <div class="comment-header">
-                <span class="comment-author">Liam Thompson</span>
-                <span class="comment-rating">★★★☆☆</span>
-              </div>
-              <p class="comment-text">"Good coffee but sometimes it's too crowded and noisy for my taste. The avocado toast is excellent though!"</p>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -249,7 +212,6 @@
     // Menu filtering functionality
     document.querySelectorAll('.category-button').forEach(button => {
       button.addEventListener('click', function() {
-        // Remove active class from all buttons
         document.querySelectorAll('.category-button').forEach(btn => {
           btn.classList.remove('active');
         });
@@ -290,6 +252,7 @@
         };
         
         document.querySelector('.food-description').innerText = descriptions[itemName] || 'A delicious menu item from The pacific Cafe.';
+        loadReviews(itemName);
       });
     });
     
@@ -321,33 +284,15 @@
     });
     
     // Form submission (this would normally send data to a server)
-    document.getElementById('review-form').addEventListener('submit', function(e) {
+    document.getElementById('review-form').addEventListener('submit', async function (e) {
       e.preventDefault();
-      alert('Thank you for your review! It will be added once approved.');
-      // In a real application, you would send this data to a server
     });
 
-    document.addEventListener('DOMContentLoaded', () => {
-      const urlParams = new URLSearchParams(window.location.search);
-      const highlightFood = urlParams.get('highlight');
-    
-      if (highlightFood) {
-        const menuItems = document.querySelectorAll('.menu-item');
-        menuItems.forEach(item => {
-          const itemName = item.querySelector('h3').textContent;
-          if (itemName === highlightFood) {
-            item.style.border = '2px solid #FFD700'; // Highlight with a gold border
-            item.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Scroll to the item
-          }
-        });
-      }
+    document.querySelectorAll('.logo').forEach(item => {
+      item.addEventListener('click', function() {
+        window.location.href = 'index.html';
+      });
     });
-document.querySelectorAll('.logo').forEach(item => {
-  item.addEventListener('click', function() {
-    window.location.href = 'index.html';
-
-  });
-});
   </script>
 
 </body>
